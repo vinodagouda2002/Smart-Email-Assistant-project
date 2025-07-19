@@ -11,7 +11,7 @@ const App = () => {
   const handleGenerate = async () => {
     setLoading(true);
     try {
-      const response = await axios.post("http://localhost:8081/api/email/generate", {
+      const response = await axios.post("https://smart-email-assistant-backend-ou5v.onrender.com", {
         emailContent,
         tone,
       });
